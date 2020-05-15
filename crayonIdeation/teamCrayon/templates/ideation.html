@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/ideation.css">
+    <title>멋쟁이사자처럼 짱구팀</title>
+</head>
+<body>
+    
+    <!-- 첫번째 페이지 -->
+    
+<div class="container">
+    <div class="title">
+        <h1>짱구의 짝궁을 찾아라!<h1>
+    </div>
+    <header>
+        <nav>
+            <ul class="navcontainer">
+                <li><a id="bloodtype" href="#">A형</a></li>
+                <li><a id="bloodtype" href="#">B형</a></li>
+                <li><a id="bloodtype" href="#">AB형</a></li>
+                <li><a id="bloodtype" href="#">O형</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="character">
+        <div class="hunyuri">
+            <div class="huni">
+                <img src="../static/훈이.jpg" id="huni img" width="300px" height="300px">
+            </div>
+            <div class="yuri">
+                <img src="../static/유리.jpg" id="yuributton" width="300px" height="300px">
+            </div>
+        </div>
+        <div class="chulmaeng">
+            <div class="chulsu">
+                <img src="../static/철수.jpg" id="chulsubutton" width="300px" height="300px">
+            </div>
+            <div class="maenggu">
+                <img src="../static/맹구.jpg" id="maenggubutton" width="300px" height="300px">
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <img src="../static/물음표.jpg" id="hunibutton" width="150px" height="150px">
+        <p>어떻게 하는거냐면 말이야</p>
+    </div>
+</div>
+
+<!-- 모달부분 -->
+
+<div class="hunimodal" id="hunimodalid">
+    <div class="hunimodalcontent" id="hunimodalid">
+        <span class="huniclossbutton">&times;</span>
+        <h1>짱구의 최고의 짝꿍되기 게임</h1><br>
+        <h4>A형은 훈이</h4>
+        <h4>B형은 유리</h4>
+        <h4>AB형은 철수</h4>
+        <h4>O형은 맹구</h4>
+        <p>각 혈액형에 맞는 캐릭터를 선택하고 가위바위보를 해서 포인트를 최대한 많이 얻으면 너는 짱구와 함께 지구를 구할 수 있어!</p>
+    </div>
+</div>
+
+
+<!-- 두번째 페이지 -->
+
+<div class="gamepage">
+    <div class="game title">
+        <div class="stopwatch" >
+            <h1 id = "timer" style="color: white;">지금 남은 시간은! 60초</h1>
+        </div>
+        <div class="gamename">
+            <h1 style="color: white;">가위 바위 보 게임</h1>
+        </div>
+        <div class="nowtime">
+            <h1 id="clock" style="color:white;">00:00</h1>
+        </div>
+    </div>
+    <div id="point">
+        <p>포인트 표시</p>
+    </div>
+    <div id="game">
+        <img src="../static/가위.jpg" id="btnScissors">
+
+        <img src="../static/바위.jpg" id="btnRock">
+
+        <img src="../static/보.jpg" id="btnPaper">
+
+        <!-- <button id="btnReset">리셋</button> -->
+
+    </div>
+    <div id="result"></div>
+</div>
+</body>
+<script src="../static/ideation.js"></script>
+<script src="../static/modal.js"></script>
+<script src="../static/timer.js"></script>
+<script type="text/javascript" src="../static/game.js"></script>
+</html>

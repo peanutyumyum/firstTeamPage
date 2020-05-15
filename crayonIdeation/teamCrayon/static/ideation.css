@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 첫번째 페이지 */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* 텍스트를 중앙으로 */
+    align-items: center;
+    /* 아이템을 중앙으로 */
+    background-color: aquamarine;
+    top: 0;
+    /* div가 완전히 위쪽에 붙게 만듬 */
+    height: 1080px;
+    width: 100%;
+}
+.title{
+    color: seashell;
+    height: 100px;
+    /* font-size: 60px; */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Nav Bar 관련 css부분 */
+
+ul{
+    list-style:none;
+    padding-top:27px;
+    width: 1000px;
+    height: 60px;
+    background-color: white;
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: skyblue;
+}
+ul li{
+    float: left;
+    margin-right:200px;
+    left: 500px;
+}
+ul li a{
+    text-decoration:none;
+    font-size:25px;
+    color: black;
+    text-align: center;
+    left: 500px;
+}
+
+
+/* 짱구 캐릭터 버튼 관련 css부분 */
+
+.character{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hunyuri{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.chulmaeng{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.huni{
+    position: absolute;
+    left: 527px;
+    top: 280px;
+}
+.yuri{
+    position: absolute;
+    right: 527px;
+    top: 280px;
+}
+.chulsu{
+    position: absolute;
+    left: 527px;
+    top: 620px;
+}
+.maenggu{
+    position: absolute;
+    right: 527px;
+    top: 620px;
+}
+
+.question{
+    position: absolute;
+    right: 100px;
+    top: 260px;
+    color: white;
+    font-size: 20px;
+}
+
+/* 모달 관련 css부분 */
+
+.hunimodal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hunimodalcontent{
+    text-align: center;
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+.huniclossbutton{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.huniclossbutton:hover, 
+.huniclossbutton:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 모달 애니메이션도 시간 있으면 추가해보기 모달 코드 css에서 찾을 수 있음 */
+
+
+/* 두번째 페이지 */
+
+.gamepage{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* 텍스트를 중앙으로 */
+    justify-content: center;
+    /* 모두 중앙으로 */
+    background-color: #33ffba;
+    top:1080px;
+    height: 1080px;
+    width: 100%;
+}
+.stopwatch{
+    position: absolute;
+    left: 100px;
+    top: 1150px;
+}
+.gamename{
+    font-size: 30px;
+}
+.nowtime{
+    position: absolute;
+    right: 100px;
+    top: 1150px;
+}
+#point{
+    position: absolute;
+    right: 90px;
+    top: 1450px;
+    border: solid 5px;
+    border-color: coral;
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    color: white;
+    font-size: 30px;
+}
+#game{
+    position: absolute;
+    top: 1350px;
+}
+#result{
+    position: absolute;
+    top: 1800px;
+    color: white;
+    font-size: 60px;
+}
